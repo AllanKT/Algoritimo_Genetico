@@ -66,3 +66,33 @@ Para descobrir a área de intersecção dos nós sensores, utilizou-se técnicas
 ![Figura 2](images/setor_circular.png?raw=true "Área do setor circular")
 
 Portanto obtém-se a área do setor circular como sendo	```X=Ɵπr2/360```.	Com base nisso chega-se facilmente o valor do ângulo Ɵ, sendo possivel obter a formula utilizável para calcular a área do setor circular, conforme demonstrado abaixo.
+
+![Figura 3](images/calculo1.png?raw=true "Calculo 1")
+
+Percebe-se que a área de intersecção buscada se divide na metade verticalmente e pode ser calculada pela diferença entre a área de setor circular e a área do triângulo formado. Para o calculo do triângulo, utilizamos o teorema de Pitágoras.
+
+![Figura 3](images/calculo2.png?raw=true "Calculo 2")
+
+Por fim, o resultado buscado é o dobro da diferença da área do triângulo pela área do setor circular, com este resultado é obtido a diferença da soma das áreas dos dois círculos e obtemos o resultado final, conforme demonstrado na solução abaixo.
+
+```SetorCircular ={Area=Area1+ Area2−( Area1 ⋂ Area2 )|Areax=π rx2 }```
+
+#### 4.3 SELEÇÃO
+
+A seleção, independente da forma de escolha (truncamento, roleta, torneio, entre outras), selecionará os indivíduos de acordo com a função-objetivo, logo selecionará os indivíduos que possuírem a maior área de monitoramento, com a menor quantidade de nós sensores distribuídos no grid do mapa. 
+
+#### 4.4 CROSSOVER
+
+Com a função de Seleção, serão escolhidos dois indivíduos que farão a troca de código genético, ou seja, da população atual, serão escolhidos os dois indivíduos com o maior monitoramento de área e serão trocados nós sensores entre estes, gerando assim novos indivíduos.
+
+#### 4.5 MUTAÇÃO
+
+No contexto de RSSF, a mutação será, por probabilidade, inserir ou retirar um nós sensores de determinado indivíduo, assim a busca heurística não fica limitada no mínimo local do meu problema original.
+
+## 5 RESULTADOS DA IMPLEMENTAÇÃO
+
+O custo médio de um nó sensor está em torno de €279.00 [Waspmote Libelium] , tal qual cada um seria utilizado para monitoramento do ambiente em questão. Com o protocolo HACBA, o mapeamento sempre distribuirá N nodos em um ambiente de medida NxN.
+Em uma aplicação do AG no protocolo de comunicação HACBA, trata o ambiente como um todo calculando a otimização da área garantindo comunicação entre os nodos, que por consequência reduz a quantidade de nodos no ambiente com a função de Mutação e Crossover. O que me retorna um valor mais económico, e com menos redundâncias quanto a nodos que monitoram a mesma área.
+Na Figura 3 e Figura 4 são apresentadas as distribuições dos nós sensores com raio igual a 12m2 em ambientes de 100m2 plotados a partir do Matlab e do python, respectivamente, e ambos com uma quantidade inicial de 100 nós sensores para distribuição. Observa-se que no primeiro ambiente nós sensores acabam gerando uma redundância de monitoramento, enquanto no segundo caso, a quantidade inicial de 100 nós sensores foi reduzida para 20, com o mesmo monitoramento em metros quadrados, e sem gerar tanta redundância de monitoramento quanto o anterior.
+
+
