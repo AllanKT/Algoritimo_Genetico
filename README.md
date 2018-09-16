@@ -96,3 +96,35 @@ Em uma aplicação do AG no protocolo de comunicação HACBA, trata o ambiente c
 Na Figura 3 e Figura 4 são apresentadas as distribuições dos nós sensores com raio igual a 12m2 em ambientes de 100m2 plotados a partir do Matlab e do python, respectivamente, e ambos com uma quantidade inicial de 100 nós sensores para distribuição. Observa-se que no primeiro ambiente nós sensores acabam gerando uma redundância de monitoramento, enquanto no segundo caso, a quantidade inicial de 100 nós sensores foi reduzida para 20, com o mesmo monitoramento em metros quadrados, e sem gerar tanta redundância de monitoramento quanto o anterior.
 
 ![Figura 5](images/result.png?raw=true "Resultados")
+
+## 6 CONSIDERAÇÕES FINAIS
+
+
+Como visto, a utilização do protocolo HACBA sem o AG, retorna uma distribuição desnecessária dos nós sensores gerando redundância de monitoramento de área, o que resulta em custos economicamente maiores, já que tal não faz essa distribuição de forma inteligente.
+Com o AG a distribuição desses nós sensores é feita de maneira mais inteligente e sofisticada, diminuindo a redundância de monitoramento, garantindo que haverá conexão entre os nós, o que, por consequência, gera uma economia financeira na aquisição dos equipamentos.
+A aplicação do AG neste projeto foi aplicada com o objetivo de diminuir os custos de uma RSSF otimizando a área de monitoramento de forma heurística. Porém a Função Objetivo pode ser alterada para diferentes aplicações, como otimizar o sleeping ou distribuição de mensagens na rede. 
+
+
+# REFERÊNCIAS
+
+
+* CHI-TSUN CHENG, CHI K. TSE, FRANCIS C.M. LAU. (2011). “A Clustering Algorithm for Wireless Sensor Networks Based on Social Insect Colonies”. IEEE SENSORSJOURNAL, VOL. 11.
+
+* KEYUR M. RANA, MUKESH A. ZAVERI. (2011). “Techniques for Efficient Routing in Wireless Sensor Network”. International Conference on Intelligent Systems and Data Processing (ICISD).
+
+* KANCHAN VERMA. (2015). “A Comparative Study on Location based Multicast Routing Protocols of WSN:HGMR,HRPM,GMR”. Global Journal of Computer Science and Technology: E Network, Web &amp; Security.
+
+* ZOBY, L.T.M., CARVALHO, M.P., COSTA, J.C. e RUIZ, L.B. (2013). HACBA: new approach to hierarchical routing for wireless sensor network. International Journal of Computer Applications, 64(20), 38-42. 10.5120/10753-5758.
+
+* K. DEB, A, PRATAP, S. AGARWAL, T. MEYARIVAN. (2002). “A fast and elitist multi objective genetic algorithm: NSGA-II”. IEEE: IEEE Transactions on Evolutionary Computation.
+
+* ZOBY, L. M. (2013). Metodologia Para a Implementação de Arcabouços Inteligentes para o Auxílio ao Projeto de Redes de Sensores Sem Fio. Tese de Doutorado em Engenharia Elétrica. Universidade de Brasília (UnB), Faculdade de Tecnologia, Departamento de Engenharia Elétrica.
+
+* HEINZELMAN, W., CHANDRAKASAN, A. e BALAKRISHNAN, H. (2002). An application specific protocol architecture for wireless microsensor networks. IEEE Transactions on Wireless Communications, 1(4), 660-670.
+
+* SINGH, S.K., SINGH, M.P. e SINGH, D.K. (2010). Routing protocols in wireless sensor networks - a survey. International Journal of Computer Science and Engineering Survey (IJCSES), 2(1), 49-61.
+
+* PAVAI, K. (2009). Study of Routing Protocols in Wireless Sensor Networks. In: International Conference on Advances in Computing, Control, & Telecommunication Technologies, 522-525p. 
+MAN, K.F. & TANG, WALLACE K.s & KWONG, SAM. (1996). Genetic algorithms: Concepts and applications. Industrial Electronics, IEEE Transactions on. 43. 519 - 534. 10.1109/41.538609.
+
+* Waspmote Libelium. Disponivel em: <https://www.cooking-hacks.com>. Acesso em: 15 jul. 2018.
