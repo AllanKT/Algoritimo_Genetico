@@ -95,4 +95,4 @@ O custo médio de um nó sensor está em torno de €279.00 [Waspmote Libelium] 
 Em uma aplicação do AG no protocolo de comunicação HACBA, trata o ambiente como um todo calculando a otimização da área garantindo comunicação entre os nodos, que por consequência reduz a quantidade de nodos no ambiente com a função de Mutação e Crossover. O que me retorna um valor mais económico, e com menos redundâncias quanto a nodos que monitoram a mesma área.
 Na Figura 3 e Figura 4 são apresentadas as distribuições dos nós sensores com raio igual a 12m2 em ambientes de 100m2 plotados a partir do Matlab e do python, respectivamente, e ambos com uma quantidade inicial de 100 nós sensores para distribuição. Observa-se que no primeiro ambiente nós sensores acabam gerando uma redundância de monitoramento, enquanto no segundo caso, a quantidade inicial de 100 nós sensores foi reduzida para 20, com o mesmo monitoramento em metros quadrados, e sem gerar tanta redundância de monitoramento quanto o anterior.
 
-![Figura 5](images/results.png?raw=true "Resultados")
+![Figura 5](images/result.png?raw=true "Resultados")
