@@ -71,7 +71,7 @@ Portanto obtém-se a área do setor circular como sendo	```X=Ɵπr2/360```.	Com 
 
 Percebe-se que a área de intersecção buscada se divide na metade verticalmente e pode ser calculada pela diferença entre a área de setor circular e a área do triângulo formado. Para o calculo do triângulo, utilizamos o teorema de Pitágoras.
 
-![Figura 3](images/calculo2.png?raw=true "Calculo 2")
+![Figura 4](images/calculo2.png?raw=true "Calculo 2")
 
 Por fim, o resultado buscado é o dobro da diferença da área do triângulo pela área do setor circular, com este resultado é obtido a diferença da soma das áreas dos dois círculos e obtemos o resultado final, conforme demonstrado na solução abaixo.
 
