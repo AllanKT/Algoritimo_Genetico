@@ -64,3 +64,5 @@ A área total de monitoramento pode ser calculada pela soma das áreas de monito
 Para descobrir a área de intersecção dos nós sensores, utilizou-se técnicas para calcular área de triângulos e área do setor circular. Segue a demonstração do cálculo, inicialmente usando regra de três, conforme a Figura 2.
 
 ![Figura 2](images/setor_circular.png?raw=true "Área do setor circular")
+
+Portanto obtém-se a área do setor circular como sendo	```X=Ɵπr2/360```.	Com base nisso chega-se facilmente o valor do ângulo Ɵ, sendo possivel obter a formula utilizável para calcular a área do setor circular, conforme demonstrado abaixo.
