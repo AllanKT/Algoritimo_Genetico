@@ -58,6 +58,9 @@ A função-objetivo tem como finalidade otimizar o posicionamento dos nós senso
 
 Como este é meramente o portador de seu código genético, no contexto de RSSF, o indivíduo será representado pela área total que os nós sensores distribuídos na rede conseguem monitorar.
 A área total de monitoramento pode ser calculada pela soma das áreas de monitoramento individuais de cada nodo, com a diferença da intersecção dos mesmos, conforme exemplificado na Figura 1.
-```
+
 ![Figura 1](images/Area.png?raw=true "Cálculo da área de monitoramento")
-```
+
+Para descobrir a área de intersecção dos nós sensores, utilizou-se técnicas para calcular área de triângulos e área do setor circular. Segue a demonstração do cálculo, inicialmente usando regra de três, conforme a Figura 2.
+
+![Figura 2](images/setor_circular.png?raw=true "Área do setor circular")
